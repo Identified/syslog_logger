@@ -1,7 +1,13 @@
 ## Current (Unreleased)
 
+
+## 2.0.1 / March 20, 2013
+
 * Beginning Identiifed's fork of the project
 * Markdown-ify and update documentation
+* Remove Hoe dependency
+* Gemify
+* Update rake tasks for running tests
 
 
 ## 2.0 / October 5, 2012

@@ -1,13 +1,17 @@
-# -*- ruby -*-
+require "bundler/gem_tasks"
+require "rake/testtask"
 
-require 'hoe'
-
-Hoe.plugin :seattlerb
-
-Hoe.spec 'SyslogLogger' do
-  developer 'Eric Hodel', 'drbrain@segment7.net'
-
-  self.rubyforge_name = 'seattlerb'
+desc 'Run tests'
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
 end
 
-# vim: syntax=Ruby
+desc 'Benchmark'
+task :bench do
+  load 'bench/perf.rb'
+end
+
+task :default => :test
