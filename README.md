@@ -1,4 +1,8 @@
 # syslog_logger
+
+[![Build Status](https://api.travis-ci.org/Identified/syslog_logger.png?branch=master)](https://travis-ci.org/Identified/syslog_logger)
+[![Code Climate](https://codeclimate.com/github/Identified/syslog_logger.png)](https://codeclimate.com/github/Identified/syslog_logger)
+
 A Logger replacement that logs to syslog.  It is almost drop-in with a few caveats.
 
 ## Installation
